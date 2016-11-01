@@ -3,6 +3,10 @@ package com.mycompany.testproject;
 import java.io.File;
 import java.util.Date;
 
+/**
+ *
+ * Класс для компактного хранения информации о пользователе.
+ */
 public class User {
 
     private final String name;

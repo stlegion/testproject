@@ -5,17 +5,22 @@ import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.Locale;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 
-
+/**
+ *
+ * Класс определяющий функционал парсинга имени файла.
+ */
 public class ProfileParser implements IProfileParser{
     
     @Autowired
     private UserCreator userCreator;
 
+    /**
+     *
+     * @param profile файл с профилем пользователя. Имя файла должно следовать определенному формату: <b>имя фамилия дд_мм_гг</b>
+     * @return объект с полученными данными о пользователе
+     */
     @Override
     public User parse(File profile) {
             String fileName = profile.getName();

@@ -12,6 +12,10 @@ import java.util.logging.Logger;
 import javax.sql.DataSource;
 import org.springframework.beans.factory.annotation.Autowired;
 
+/**
+ *
+ * Класс для работы с БД.
+ */
 public class DbManager {
 
     @Autowired

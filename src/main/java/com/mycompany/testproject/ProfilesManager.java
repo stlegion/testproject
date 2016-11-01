@@ -3,9 +3,12 @@ package com.mycompany.testproject;
 import java.io.File;
 import java.util.Arrays;
 import java.util.Optional;
-import javax.sql.DataSource;
 import org.springframework.beans.factory.annotation.Autowired;
 
+/**
+ *
+ * Основной класс, выполняющий обработку файлов.
+ */
 public class ProfilesManager {
 
     @Autowired
